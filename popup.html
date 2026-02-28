@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>BondBuzz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h2>💗BondBuzz💗</h2>
+
+    <!-- Room Section -->
+    <div class="room-section">
+      <input 
+        type="text" 
+        id="roomCode" 
+        placeholder="Enter Room Code"
+      />
+      <button id="connectBtn">Connect</button>
+    </div>
+
+    <!-- Message Section -->
+    <div class="message-section">
+      <textarea 
+        id="messageInput" 
+        placeholder="Type your message..."
+        rows="3"
+      ></textarea>
+
+      <button id="sendBtn">Send 💖</button>
+    </div>
+    <div class="camera-section">
+      <button id="startCameraBtn">Start Camera</button>
+      <video id="videoFeed" width="90%" height="auto" autoplay playsinline style="display: none;"></video>
+      <button id="captureBtn" style="display: none;">Capture Image</button>
+      <canvas id="canvas" style="display: none;"></canvas>
+      <img id="capturedImage" style="display: none; max-width: 80%; height: auto; border: 1px solid #ccc; margin-top: 10px;">
+      <button id="sendImageBtn" style="display: none;">Send Image 📸</button>
+    </div>
+
+    <p id="status"></p>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
